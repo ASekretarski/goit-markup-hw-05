@@ -28,8 +28,12 @@
         </a>
         <nav class="nav-menu">
           <ul class="list flex">
-            <li class="list-item"><a class="link active" href="./index.html">Agencja</a></li>
-            <li class="list-item"><a class="link" href="./portfolio.html">Portfolio</a></li>
+            <li class="list-item">
+              <a class="link active" href="./index.html">Agencja</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
             <li class="list-item"><a class="link" href="">Kontakt</a></li>
           </ul>
         </nav>
@@ -121,31 +125,40 @@
           <h2 class="heading">Czym się zajmujemy</h2>
           <ul class="list flex">
             <li>
-              <img
-                class="example-img"
-                src="images/csz-image1.jpg"
-                alt="picture of code being written on a computer"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="example-img"
+                  src="images/csz-image1.jpg"
+                  alt="picture of code being written on a computer"
+                  width="370"
+                  height="294"
+                />
+                <p class="label">APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li>
-              <img
-                class="example-img"
-                src="images/csz-image2.jpg"
-                alt="picture of phone app layout being designed"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="example-img"
+                  src="images/csz-image2.jpg"
+                  alt="picture of phone app layout being designed"
+                  width="370"
+                  height="294"
+                />
+                <p class="label">APLIKACJE MOBILNE</p>
+              </div>
             </li>
             <li>
-              <img
-                class="example-img"
-                src="images/csz-image3.jpg"
-                alt="picture of a color pallet displayed on a tablet"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="example-img"
+                  src="images/csz-image3.jpg"
+                  alt="picture of a color pallet displayed on a tablet"
+                  width="370"
+                  height="294"
+                />
+                <p class="label">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -329,35 +342,42 @@
     </main>
     <footer class="footer">
       <div class="container flex">
-        <div class="company-info"><a class="link logo footer" href="./index.html">
-          <span class="logo-blue">Web</span>Studio
-        </a>
-        <address class="address">
-          <ul class="list">
-            <li class="list-item">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="list-item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="list-item">
-              <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-            </li>
+        <div class="company-info">
+          <a class="link logo footer" href="./index.html">
+            <span class="logo-blue">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="list">
+              <li class="list-item">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="list-item">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-item">
+                <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="socials">
+          <h2 class="heading">DOŁĄCZ DO NAS</h2>
+          <div class="flex">
+            <a class="link socials-icon" href=""
+              ><svg class="icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-instagram"></use></svg></a
+            ><a class="link socials-icon" href=""
+              ><svg class="icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-twitter"></use></svg></a
+            ><a class="link socials-icon" href=""
+              ><svg class="icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-facebook"></use></svg></a
+            ><a class="link socials-icon" href=""
+              ><svg class="icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
           </div>
-          <div class="socials">
-            <h2 class="heading">DOŁĄCZ DO NAS</h2>
-            <div class="flex"><a class="link socials-icon" href=""><svg class="icon" width="20px" height="20px">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg></a><a class="link socials-icon" href=""><svg class="icon" width="20px" height="20px">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg></a><a class="link socials-icon" href=""><svg class="icon" width="20px" height="20px">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg></a><a class="link socials-icon" href=""><svg class="icon" width="20px" height="20px">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg></a></div>
-          </div>
-          </ul>
-        </address>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
