@@ -10,7 +10,9 @@
     --secondary-bgrd-color: #F5F4FA;
     --tertiary-bgrd-color: #ECECEC;
     --quaternary-bgrd-color: #EEEEEE;
-    --quinary-bgrd-color: rgba(255, 255, 255, 10%)
+    --quinary-bgrd-color: rgba(255, 255, 255, 10%);
+    --senary-bgrd-color:rgba(0, 0, 0, 20%);
+    --septenary-bgrd-color: rgba(0, 0, 0, 10%);
 }
     
 /* global */
@@ -547,4 +549,59 @@ padding: 0px 15px;
 
 .example-card:hover .overlay {
     transform: translateY(0);
+}
+
+/* MODAL WINDOW */
+
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--senary-bgrd-color);
+
+    transition: opacity 500ms ease-in;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--tertiary-text-color);
+    border-radius: 4px;
+
+    transition: opacity 800ms ease-out 500ms, transform 1200ms ease-out 100ms;
+}
+
+
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--tertiary-text-color);
+    border-radius: 50%;
+    border-color: var(--septenary-bgrd-color);
+    border-width: 1px;
+    padding: 6px;
+    cursor: pointer;
+    
+}
+
+.is-hidden .modal {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+        opacity: 0%;
 }
