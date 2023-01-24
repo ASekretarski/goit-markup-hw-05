@@ -20,6 +20,10 @@ body {
     color: var(--primary-text-color);
 }
 
+a:visited {
+    color: inherit;
+}
+
 /* buttons and links*/
 
 .link {
@@ -94,6 +98,7 @@ body {
     color: var(--tertiary-text-color);
     border: 0px;
     line-height: 1.88;
+
 }
 
 
@@ -103,25 +108,25 @@ body {
     color: var(--primary-text-color);
     line-height: 1.63;
     padding: 6px 22px 6px 22px;
-    border-radius: 4px;;
-
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list .button:hover,
 .list .button:focus {
-    font-weight: 500;
     background-color: var(--primary-brand-color);
     color: var(--tertiary-text-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.18), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.address li {
+.address .list-item {
     color: var(--tertiary-text-color);
 }
 
 .address .link {
     color: var(--tertiary-text-color);
     opacity: 60%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -398,13 +403,13 @@ padding: 0px 15px;
     padding: 15px 31px;
     border: 1px solid var(--quaternary-brand-color);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo:hover,
 .client-logo:focus {
-    padding: 15px 31px;
     border: 1px solid var(--primary-brand-color);
-    border-radius: 4px;
+    
 }
 
 .our-clients .heading {
@@ -413,6 +418,7 @@ padding: 0px 15px;
 
 .our-clients .icon {
     fill: var(--quaternary-brand-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients .icon:hover,
@@ -427,6 +433,7 @@ padding: 0px 15px;
 .header .link,
 .header .link:visited {
     fill: var(--secondary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header .link:hover,
 .header .link:focus {
@@ -456,6 +463,8 @@ padding: 0px 15px;
 .our-team .socials-icon {
     padding: 12px;
     fill: var(--quaternary-brand-color);
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .socials-icon {
@@ -463,12 +472,12 @@ padding: 0px 15px;
     fill: var(--tertiary-text-color);
     background-color: var(--quinary-bgrd-color);
     border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon:hover,
 .socials-icon:focus {
     background-color: var(--primary-brand-color);
-    border-radius: 50%;
     fill: var(--tertiary-text-color);
 }
 
@@ -483,6 +492,10 @@ padding: 0px 15px;
 
 .footer .heading {
     padding: 12px 0px 20px;
+}
+
+.example-card {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .example-card:hover {
