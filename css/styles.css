@@ -604,4 +604,10 @@ padding: 0px 15px;
         left: 50%;
         transform: translate(-50%, -200%);
         opacity: 0%;
+
+    transition: opacity 800ms ease-out 200ms, transform 1200ms ease-out 100ms;
+}
+
+.is-hidden.backdrop {
+    transition: visibility 100ms linear 1300ms, opacity 800ms ease-out 500ms;
 }
